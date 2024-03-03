@@ -12,6 +12,8 @@ import { useSelector  } from 'react-redux'
 import { useState } from 'react';
 import { HiTrendingUp } from 'react-icons/hi';
 
+import axios from 'axios';
+
 
 function Contact() {
 	const[email,setEmail]=useState('')

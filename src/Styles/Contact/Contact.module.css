@@ -313,13 +313,6 @@ textarea{
     }
 
 
-    .submitButton:hover {
-        transition: var(--transition);
-        background-color: var(--orange);
-        color: white;
-    }
-
-
 
     .submitMessage {
         font-size: 1rem;
