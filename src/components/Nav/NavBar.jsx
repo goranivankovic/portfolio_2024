@@ -137,7 +137,7 @@ bars.style.transform='rotate(-360deg)'
                   <Link to={'/dev/skills'}>Skills</Link> 
                   <Link to={'/dev/contact'}>Contact</Link> 
 
-                  <Link to={'/'}><SlScreenDesktop    className={navStyles.sun} /> </Link>      
+                  <Link to={'/dev'}><SlScreenDesktop    className={navStyles.sun} /> </Link>      
 
         
 

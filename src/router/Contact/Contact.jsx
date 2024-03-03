@@ -7,7 +7,7 @@ import contactStyles from '../../Styles/Contact/Contact.module.css'
 import { AiOutlineArrowRight ,AiOutlineCheckCircle} from 'react-icons/ai'
 
 
-
+import axios from 'axios';
 
 import { useState } from 'react';
 import { HiTrendingUp } from 'react-icons/hi';
