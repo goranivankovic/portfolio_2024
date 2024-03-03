@@ -126,19 +126,20 @@ bars.style.transform='rotate(-360deg)'
 
     <div className={navStyles.main768}>
 
-                  <motion.div className={navStyles.first}
-                   animate={{x:[300,0],rotate:[10,0],opacity:[0,1]}}
-                   transition={{duration:1.5,delay:.5,ease:'easeOut'}}
-                 >
+                 <motion.div className={navStyles.first}
+       animate={{y:[-300,100,0],rotate:[10,0]}}
+       transition={{duration:2.5,delay:1,ease:'anticipate'}}
+       >
 
-                  <Link to={'/dev'}>Home</Link>
-                  <Link to={'/dev/about'}>About</Link>
-                  <Link to={'/dev/portfolio'}>Portfolio</Link>  
-                  <Link to={'/dev/skills'}>Skills</Link> 
-                  <Link to={'/dev/contact'}>Contact</Link> 
+                 <a onClick={toogle}  className={navStyles.firstItem} href="/#home">Home </a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#about">  About</a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#portfolio"> Portfolio</a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#skills"> Skills / Tech </a>
+                 <a onClick={toogle}  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#contact">Contact</a>
 
-                  <Link to={'/dev'}><SlScreenDesktop    className={navStyles.sun} /> </Link>      
+            <Link to={'/dev'}><SlScreenDesktop  style={{color:textColor}}  className={navStyles.sun} /> </Link>      
 
+      
         
 
              </motion.div>

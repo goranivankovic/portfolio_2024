@@ -134,6 +134,7 @@ display: none;
 
     font-size: var(--navItemSun);
     cursor: pointer;
+   
   }
  }
 
@@ -209,19 +210,8 @@ display: none;
   text-decoration: none;
   color: var(--white);
 
-width: 100%;
+width: 90%;
 
-}
-
-
-
-
-
-
-.main768 .sun {
-
-  font-size: var(--navItemSun);
-  cursor: pointer;
 }
 
 
@@ -317,7 +307,7 @@ width: 100%;
   .main768 .sun {
 
     font-size: var(--navItemSun);
-    cursor: pointer;
+  
   }
 
 
