@@ -1,0 +1,234 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.main{
+
+    min-height: 100vh;
+
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+  
+    /* background-color: black; */
+
+}
+
+
+
+.firstDiv {
+
+
+    padding: 2em;
+   width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    text-align: center;
+
+  
+
+    /* border: 1px solid red; */
+
+  
+
+
+}
+
+.firstdivHeadline {
+    padding: 1em;
+
+    font-size: var(--homeHeadline);
+    color: var(--orange);
+
+
+
+    /* border: 2px solid red; */
+
+ 
+}
+
+.firstdivText {
+
+    font-size: var(--homeText);
+   padding:1.2em;
+   text-align: center;
+        /* border: 2px solid red; */
+
+}
+
+
+
+
+.buttonLinkDiv {
+    width: 90%;
+    z-index: 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+  
+
+}
+
+
+
+.button {
+    width: var(--homeBtnWidh);
+    padding: var(--homeBtnPad);
+    border-radius: var(--radius);
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    border: .2em solid var(--orange);
+
+    font-size: var(--homeBtnSize);
+
+    cursor: pointer;
+
+
+
+
+
+
+}
+
+.buttonLinkDiv a{
+    text-decoration: none;
+}
+
+.button:hover {
+    transition:var(--transition);
+    background-color: #f0ad4e;
+    color: white;
+}
+
+
+.arrow{
+    animation: arrow infinite 2s;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+
+@keyframes arrow{
+    0%{transform: translateY(0px)}
+50% { transform: translateY(10px)}
+100% {transform: translateY(0px)}
+
+}
+
+
+
+@media (max-width:65rem) {
+.firstDiv {
+
+
+        padding: 1em;
+        width: 48rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 3;
+        text-align: center;
+
+
+
+
+
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media  (max-width: 48rem) {
+
+
+
+.main {
+
+        min-height: 100vh;
+
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /* background-color: black; */
+
+    }
+
+
+
+    .firstDiv {
+
+    
+        padding: .5em;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 3;
+        color: white;
+     margin-bottom: 1em;
+
+
+
+    }
+
+    .firstdivHeadline {
+        padding: .5em;
+  
+
+
+    }
+
+
+  .arrow {
+      animation: arrow infinite 2s;
+      font-size: 1.3rem;
+      margin-left: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

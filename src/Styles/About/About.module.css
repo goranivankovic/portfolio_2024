@@ -1,0 +1,825 @@
+
+
+
+
+
+
+.main {
+
+
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    padding-top: 3em;
+
+   background-color: var(--black);
+   color: var(--white);
+
+
+
+}
+
+
+
+
+
+
+
+.firstDiv {
+
+
+  width: 65rem;
+    display: flex;
+    align-items: center;
+
+
+    z-index: 5;
+
+
+    font-size: var(--aboutHeadline);
+    padding: 1em;
+
+
+
+
+
+
+    /* border: 2px solid red; */
+
+
+}
+
+.firstDiv span {
+    color: var(--orange);
+    border-bottom: .2em solid var(--orange);
+    padding-bottom: .3em;
+}
+
+
+.secondDiv {
+    width: 65rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+    /* border: 2px solid red; */
+
+
+}
+
+.secondDiv img {
+    height: 22rem;
+    width: 40%;
+    border-radius: .7em;
+}
+
+.secondDiv img:hover {
+    transition: var(--transition);
+    opacity: .6;
+   
+}
+
+
+.secondDivText {
+    width: 50%;
+    padding: 1em;
+    font-size: var(--aboutText);
+
+}
+
+.secondDivText div {
+    padding: .5em;
+
+}
+
+.secondDivText div:hover {
+    transition: var(--transition);
+    transform: scale(.98);
+    color: var(--grey);
+}
+
+.secondDivText div:nth-child(2) {
+    color: var(--grey);
+}
+
+
+
+.threedDiv {
+    width: 65rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+/* border: 2px solid red; */
+
+
+}
+
+.threedDivItems {
+
+    position: relative;
+
+
+    width: 20rem;
+    padding: 1em;
+    height: 10rem;
+
+    border: .2em solid var(--orange);
+    border-radius: .7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+
+
+}
+
+.threedDivItems:hover {
+    transition: var(--transition);
+    transform: scale(.98) rotate(3deg);
+
+}
+
+
+.threedDivItems div {
+    width: 100%;
+    padding: .3em;
+    font-size: var(--aboutBoxText);
+
+    /* background-color: blue; */
+
+}
+
+
+
+.threedDivItems div:nth-child(1) {
+    color: var(--grey);
+}
+
+.threedDivItems span {
+
+
+    position: absolute;
+    left: 14.7rem;
+    top: 5rem;
+
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: .2em solid var(--orange);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--aboutBoxIcon);
+
+
+   
+
+
+}
+
+.threedDivItems div:hover {
+    transition: var(--transition);
+    color: var(--orange);
+}
+
+
+.threedDivItems span:hover {
+    transition: var(--transition);
+    transform: rotate(15deg);
+    color: var(--grey);
+
+}
+
+
+
+
+
+
+@media (max-width:65rem) {
+.firstDiv {
+
+
+        width: 48rem;
+        display: flex;
+        align-items: center;
+
+
+        z-index: 5;
+
+
+        font-size: var(--aboutHeadline);
+        padding: 1em;
+
+
+
+    }
+
+    .firstDiv span {
+        color: var(--orange);
+        border-bottom: .2em solid var(--orange);
+        padding-bottom: .3em;
+    }
+
+
+    .secondDiv {
+        width: 48rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+      margin-top: 2em;
+
+
+
+    }
+
+    .secondDiv img {
+        height: 19rem;
+        width: 40%;
+
+ 
+
+    }
+
+
+
+
+    .secondDivText {
+        width: 100%;
+        padding: 1em;
+        font-size: var(--aboutText);
+
+    }
+
+  
+
+
+    .threedDiv {
+        width: 48rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+
+
+
+
+    }
+
+    .threedDivItems {
+
+        position: relative;
+
+
+        width: 20rem;
+        padding: 1em;
+        height: 10rem;
+
+        border: .2em solid var(--orange);
+        border-radius: .7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+
+    }
+
+
+
+    .threedDivItems div {
+        width: 100%;
+        padding: .3em;
+        font-size: var(--aboutBoxText);
+
+        /* background-color: blue; */
+
+    }
+
+
+
+
+
+    .threedDivItems span {
+
+
+        position: absolute;
+        left: 14.7rem;
+        top: 5rem;
+
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        border: .2em solid var(--orange);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--aboutBoxIcon);
+
+
+
+
+
+    }
+
+
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:48rem) {
+    .firstDiv {
+
+
+        width: 40rem;
+        display: flex;
+        align-items: center;
+
+
+        z-index: 5;
+
+
+        font-size: var(--aboutHeadline);
+        padding: 1em;
+
+
+
+    }
+
+    .firstDiv span {
+        color: var(--orange);
+        border-bottom: .2em solid var(--orange);
+        padding-bottom: .3em;
+    }
+
+
+    .secondDiv {
+        width: 40rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        margin-top: 2em;
+
+
+
+    }
+
+    .secondDiv img {
+        height: 20rem;
+        width: 45%;
+
+
+
+    }
+
+
+
+
+    .secondDivText {
+        width: 100%;
+        padding: .5em;
+        font-size: var(--aboutText);
+
+    }
+
+
+
+
+    .threedDiv {
+        width: 40rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+
+
+
+
+    }
+
+    .threedDivItems {
+
+        position: relative;
+
+
+        width: 19rem;
+        padding: 1em;
+        height: 10rem;
+
+        border: .2em solid var(--orange);
+        border-radius: .7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+
+    }
+
+
+
+    .threedDivItems div {
+        width: 100%;
+        padding: .3em;
+        font-size: var(--aboutBoxText);
+
+        /* background-color: blue; */
+
+    }
+
+
+
+
+
+    .threedDivItems span {
+
+
+        position: absolute;
+        left: 14.7rem;
+        top: 5rem;
+
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        border: .2em solid var(--orange);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--aboutBoxIcon);
+
+
+
+
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:40rem) {
+    .firstDiv {
+
+
+        width: 30rem;
+        display: flex;
+        align-items: center;
+
+
+        z-index: 5;
+
+
+        font-size: var(--aboutHeadline);
+        padding: 1em;
+
+
+
+    }
+
+    .firstDiv span {
+        color: var(--orange);
+        border-bottom: .2em solid var(--orange);
+        padding-bottom: .3em;
+    }
+
+
+    .secondDiv {
+        width: 30rem;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        margin-top: 2em;
+
+
+
+    }
+
+    .secondDiv img {
+        height: 20rem;
+        width: auto;
+
+
+
+    }
+
+
+
+
+    .secondDivText {
+        width: 100%;
+        padding: .5em;
+        font-size: var(--aboutText);
+
+    }
+
+
+
+
+    .threedDiv {
+        width: 30rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+
+
+
+    }
+
+    .threedDivItems {
+
+        position: relative;
+
+
+        width: 19rem;
+        padding: 1em;
+        height: 10rem;
+
+        border: .2em solid var(--orange);
+        border-radius: .7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+
+    }
+
+
+
+    .threedDivItems div {
+        width: 100%;
+        padding: .3em;
+        font-size: var(--aboutBoxText);
+
+        /* background-color: blue; */
+
+    }
+
+
+
+
+
+    .threedDivItems span {
+
+
+        position: absolute;
+        left: 14.7rem;
+        top: 5rem;
+
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        border: .2em solid var(--orange);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--aboutBoxIcon);
+
+
+
+
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:30rem) {
+    .firstDiv {
+
+
+        width: 95%;
+        display: flex;
+        align-items: center;
+
+
+        z-index: 5;
+
+
+        font-size: var(--aboutHeadline);
+        padding: 1em;
+
+
+
+    }
+
+    .firstDiv span {
+        color: var(--orange);
+        border-bottom: .2em solid var(--orange);
+        padding-bottom: .3em;
+    }
+
+
+    .secondDiv {
+        width: 95%;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        margin-top: 2em;
+       
+
+
+
+    }
+
+    .secondDiv img {
+        height: 19rem;
+        width: auto;
+        padding-left: .5em;
+
+   margin-bottom: 1em;
+
+    }
+
+
+
+
+    .secondDivText {
+        width: 100%;
+        padding: .2em;
+        font-size: var(--aboutText);
+
+    }
+
+
+
+
+    .threedDiv {
+        width: 95%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+
+
+
+    }
+
+    .threedDivItems {
+
+        position: relative;
+
+
+        width: 19rem;
+        padding: 1em;
+        height: 10rem;
+
+        border: .2em solid var(--orange);
+        border-radius: .7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+
+    }
+
+
+
+    .threedDivItems div {
+        width: 100%;
+        padding: .3em;
+        font-size: var(--aboutBoxText);
+
+        /* background-color: blue; */
+
+    }
+
+
+
+
+
+    .threedDivItems span {
+
+
+        position: absolute;
+        left: 14.7rem;
+        top: 5rem;
+
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        border: .2em solid var(--orange);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--aboutBoxIcon);
+
+
+
+
+
+    }
+
+
+
+
+
+
+}
