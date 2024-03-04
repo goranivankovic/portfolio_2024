@@ -13,7 +13,7 @@
 
 
 
-    width: 22rem;
+    width: 25rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -21,6 +21,7 @@
 
    background-color: var(--black);
     color: var(--white);
+
 
 
 }
