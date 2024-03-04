@@ -17,6 +17,8 @@ import { projects } from "./Data";
 
 import { useEffect } from 'react'
 
+import { motion } from "framer-motion"
+
 
 const divHeight = {
 	minHeight: "100vh"
@@ -46,7 +48,10 @@ useEffect(() => {
   <NavBar />
 
 
-    <div style={divHeight}  className={protfolioStyles.main}  >
+    <motion.div style={divHeight}  className={protfolioStyles.main}
+	 animate={{x:[1000,0],opacity:[0,1],rotate:[-10,0],borderRadius:['10%','20%','0%']}}
+	 transition={{duration:2,ease:"circIn"}}
+	  >
 		 
 
 		        
@@ -84,7 +89,7 @@ useEffect(() => {
 							</div>
 		
 			)}				
-</div>
+</motion.div>
 
 
  </div>

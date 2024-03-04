@@ -80,6 +80,7 @@
 .secondDivForm div{
     width: 100%;
     padding: 1em;
+   
 
 }
 
@@ -170,6 +171,8 @@ textarea{
 .secondivTextItems div{
      width: 100%;
      padding: .7em; 
+     /* background-color: red; */
+
 }
 
 .check{
@@ -330,7 +333,7 @@ textarea{
 
 
     .secondivTextItems {
-        width: 32rem;
+        width: 95%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -510,7 +513,7 @@ textarea{
 
 
     .secondivTextItems {
-        width: 32rem;
+        width: 95%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -837,7 +840,7 @@ textarea{
         text-decoration: none;
         border: .2em solid var(--orange);
 
-        width: 8rem;
+        width: 7.5rem;
         font-size: var(--contactBtnSize);
         color: var(--white);
         cursor: pointer;
