@@ -105,7 +105,7 @@ bars.style.transform='rotate(-360deg)'
     <div className={navStyles.main} style={{background:bgColor}}>
 
        <motion.div className={navStyles.first}
-       animate={{y:[-300,100,0],rotate:[10,0]}}
+         animate={{y:[-300,100,0],rotate:[10,0]}}
        transition={{duration:1.5,delay:1,ease:'easeOut'}}
        >
 
@@ -143,8 +143,8 @@ bars.style.transform='rotate(-360deg)'
     <div className={navStyles.main768}>
 
                  <motion.div className={navStyles.first}
-       animate={{y:[-300,100,0],rotate:[10,0]}}
-       transition={{duration:2.5,delay:1,ease:'anticipate'}}
+       animate={{x:[300,0],rotate:[10,0],opacity:[0,1]}}
+          transition={{duration:1.5,delay:.5,ease:'easeOut'}}
        >
 
                  <a onClick={toogle}  className={navStyles.firstItem} href="/#home">Home </a>
