@@ -22,7 +22,16 @@ import {whiteBgColor,blackBgColor} from '../../redux/Redux-Actions/changeBgColor
 import { motion } from "framer-motion"
 
 
+const variants = {
+  open: { opacity: .4,background:['#0D5DCD','#f0ad4e'], x: ["-100%","0%","-100%"],transition:{duration:1.5,delay:1.5}},
+  closed: { opacity: 0,background:['#0D5DCD','#f0ad4e'], x:["0%"],transition:{duration:1}},
+}
+
+
 function NavBar() {
+
+ const [isOpen, setIsOpen] = useState(false)
+
  const laz = useSelector((state) => state.color.laz)
   const[close,setClose]=useState(true)
    const[laz2,setLaz2]=useState(false)
@@ -64,6 +73,7 @@ bars.style.transition='900ms'
 bars.style.transform='rotate(360deg)'
 
     setLaz2(!laz2)
+    setIsOpen(isOpen => !isOpen)
 
   }else{
         let bars =document.getElementById('bars')
@@ -71,6 +81,7 @@ bars.style.transition='900ms'
 bars.style.transform='rotate(-360deg)'
 
     setLaz2(!laz2)
+    setIsOpen(isOpen => !isOpen)
 
   }
 
@@ -82,6 +93,11 @@ bars.style.transform='rotate(-360deg)'
     <div>
 
   
+    <motion.div className={navStyles.orangeBack}
+       animate={isOpen ? "open" : "closed"}
+      variants={variants}
+    ></motion.div>
+
 
   
 
@@ -90,7 +106,7 @@ bars.style.transform='rotate(-360deg)'
 
        <motion.div className={navStyles.first}
        animate={{y:[-300,100,0],rotate:[10,0]}}
-       transition={{duration:2.5,delay:1,ease:'anticipate'}}
+       transition={{duration:1.5,delay:1,ease:'easeOut'}}
        >
 
                  <a  className={navStyles.firstItem} href="/#home">Home </a>

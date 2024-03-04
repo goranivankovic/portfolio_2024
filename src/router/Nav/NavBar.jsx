@@ -21,8 +21,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { motion } from "framer-motion"
 
 const variants = {
-  open: { rotate: 0 ,transition:{duration:2}},
-    closed: { rotate: 360 ,transition:{duration:2}},
+  open: { opacity: .4,background:['#0D5DCD','#f0ad4e'], x: ["-100%","0%","-100%"],transition:{duration:1.5,delay:1.5}},
+  closed: { opacity: 0,background:['#0D5DCD','#f0ad4e'], x:["0%"],transition:{duration:1}},
 }
 
 
@@ -38,6 +38,7 @@ bars.style.transition='900ms'
 bars.style.transform='rotate(360deg)'
 
     setLaz(!laz)
+    setIsOpen(isOpen => !isOpen)
 
   }else{
         let bars =document.getElementById('bars')
@@ -45,6 +46,7 @@ bars.style.transition='900ms'
 bars.style.transform='rotate(-360deg)'
 
     setLaz(!laz)
+   setIsOpen(isOpen => !isOpen)
 
   }
 
@@ -60,10 +62,12 @@ bars.style.transform='rotate(-360deg)'
 
     <div>
 
-  <FaBars id='bars' className={navStyles.bars} onClick={toogle}
-    
-  />
+  <FaBars id='bars' className={navStyles.bars} onClick={toogle}/>
 
+      <motion.div className={navStyles.orangeBack}
+       animate={isOpen ? "open" : "closed"}
+      variants={variants}
+    ></motion.div>
 
 
  {laz ?   

@@ -11,12 +11,7 @@ import protfolioStyles from '../../Styles/Portfolio/Portfolio.module.css'
 
 
 //Images
-import b8 from         '../../assets/b8.jpg'
-import shop from       '../../assets/shop.png'
-import movies from     '../../assets/movies.jpeg'
-import weather from     '../../assets/weather.jpeg'
-import fit from        '../../assets/fit.jpg'
-import laptop from     '../../assets/crypto.jpg'
+import { motion } from 'framer-motion'
 
 import { projects } from "./Data";
 
@@ -70,6 +65,8 @@ useEffect(() => {
 
 
 
+
+
 			{projects.map((e)=>
 
 			   <div key={e.id} className={protfolioStyles.secondDiv} style={{color:textColor,boxShadow:'2px 1px 10px',textColor}}>
@@ -88,7 +85,9 @@ useEffect(() => {
 
 							</div>
 		
-			)}				
+			)}		
+
+
 
 
 

@@ -8,17 +8,19 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column; 
-   z-index: 15;
+   z-index: 10;
     padding: 1em;
 
     background-color: var(--black);
     color: var(--white);
 
-     
+ 
 
-   
+
+
+  
   
     /* border: 1px solid red; */
 
@@ -37,7 +39,7 @@
 
 
 
-    z-index: 5;
+
 
     font-size: var(--portofolioHeadline);
     padding: 2em;
@@ -59,6 +61,7 @@ padding-bottom: .3em;
 
 
 
+
 .secondDiv{
 
 
@@ -70,10 +73,16 @@ padding-bottom: .3em;
     border-radius: 10px;
 
     box-shadow: 0.2px .2px 5px;
+    margin-bottom: 1em;
+
+    /* min-height: 100vh;
+     position: sticky;
+      top: 0%;
+      background-color: var(--black); 
+   */
 
 
 
-margin-bottom: 1em;
 
       
 
@@ -234,7 +243,7 @@ color: var(--orange);
 
     border-radius: 10px;
 
-    box-shadow: 0.2px .2px 5px;
+
 
     margin-bottom: 1em;
 
@@ -383,7 +392,6 @@ color: var(--orange);
 
     border-radius: 10px;
 
-    box-shadow: 0.2px .2px 5px;
 
     margin-bottom: 1em;
 
@@ -544,7 +552,6 @@ color: var(--orange);
 
     border-radius: 10px;
 
-    box-shadow: 0.2px .2px 5px;
 
     margin-bottom: 1em;
 
