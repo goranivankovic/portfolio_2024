@@ -23,8 +23,8 @@ import { motion } from "framer-motion"
 
 
 const variants = {
-  open: { opacity: .4,background:['#0D5DCD','#f0ad4e'], width:["0%","100%","0%"],transition:{duration:1.5,delay:1.5}},
-  closed: { opacity: 0,background:['#0D5DCD','#f0ad4e'], width:["100%","0%"],transition:{duration:1.5,delay:1}},
+  open: { opacity: .4,background:['#f0ad4e','#f5f5f5'], width:["0%","100%","0%"],transition:{duration:1.5,delay:1.5}},
+  closed: { opacity: 0,background:['f5f5f5','#f0ad4e'], width:["100%","0%"],transition:{duration:1.5,delay:1}},
 }
 
 

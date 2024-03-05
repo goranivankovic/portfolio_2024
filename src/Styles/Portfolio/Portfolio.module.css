@@ -72,14 +72,11 @@ padding-bottom: .3em;
  
     border-radius: 10px;
 
-    box-shadow: 0.2px .2px 5px;
+    box-shadow: 0.2px .2px 5px; 
     margin-bottom: 1em;
 
-    /* min-height: 100vh;
-     position: sticky;
-      top: 0%;
-      background-color: var(--black); 
-   */
+
+
 
 
 
@@ -566,8 +563,8 @@ color: var(--orange);
   .secondDivItem1 {
     height: 18rem;
     width: 100%;
-    border-radius: 8px;
-    z-index: 2;
+    border-radius: var(--radius);
+
 
 
 
@@ -583,7 +580,7 @@ color: var(--orange);
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 6px;
+    padding: 1em;
 
 
     font-size: var(--portfolioText);

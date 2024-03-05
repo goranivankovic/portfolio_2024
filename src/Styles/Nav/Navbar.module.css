@@ -221,6 +221,14 @@ z-index: 100;
 
 }
 
+ .firstItem {
+
+   color: var(--white);
+   border: none;
+   padding-bottom: .3em;
+
+ }
+
 .main768 .first a {
   padding: 1em;
   font-size: var(--navItems);

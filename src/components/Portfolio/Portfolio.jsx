@@ -11,7 +11,11 @@ import protfolioStyles from '../../Styles/Portfolio/Portfolio.module.css'
 
 
 //Images
-import { motion } from 'framer-motion'
+import { motion ,useScroll } from 'framer-motion'
+
+
+
+
 
 import { projects } from "./Data";
 
@@ -25,6 +29,8 @@ import { useSelector   } from 'react-redux'
 import React from 'react'
 
 function Portfolio() {
+
+
 
     const bgColor = useSelector((state) => state.color.bgColor)
    const textColor = useSelector((state) => state.color.textColor)
@@ -48,6 +54,8 @@ useEffect(() => {
 
     <div id='portfolio' style={{background:bgColor,color:textColor}}  className={protfolioStyles.main}  >
 		 
+  
+
 
 		        
 
