@@ -10,8 +10,7 @@ import protfolioStyles from '../../Styles/Portfolio/Portfolio.module.css'
 
 
 
-//Images
-import { motion ,useScroll } from 'framer-motion'
+
 
 
 
@@ -26,7 +25,7 @@ import { useEffect } from 'react'
 import { useSelector   } from 'react-redux'
 
 
-import React from 'react'
+
 
 function Portfolio() {
 
@@ -77,7 +76,7 @@ useEffect(() => {
 
 			{projects.map((e)=>
 
-			   <div key={e.id} className={protfolioStyles.secondDiv} style={{color:textColor,boxShadow:'2px 1px 10px',textColor}}>
+			   <div  key={e.id} className={protfolioStyles.secondDiv} style={{color:textColor,boxShadow:'2px 1px 10px',textColor}}>
 								<img className={protfolioStyles.secondDivItem1} src={e.img} alt="image" />
 
 							    <div className={protfolioStyles.secondDivItem2} style={{color:textColor}}>

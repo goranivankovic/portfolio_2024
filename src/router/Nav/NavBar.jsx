@@ -18,6 +18,9 @@ import { useSelector, useDispatch } from 'react-redux'
 
 
 
+
+
+
 import { motion } from "framer-motion"
 
 const variants = {
@@ -26,7 +29,31 @@ const variants = {
 }
 
 
+
+
+
+
+
+const menuVariants = {
+    open: {
+        opacity: 1,
+        transition: {
+            duration: 2.5,
+            delay:1.5
+        },
+        pathLength: 1
+      },
+    closed: {
+        opacity: 0,
+        transition: {
+            duration: 2
+        },
+         pathLength: 0
+    }
+}
+
 function NavBar() {
+   const [showMenu, setShowMenu] = useState("closed")
 
   const[laz,setLaz]=useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -45,8 +72,9 @@ bars.style.transform='rotate(360deg)'
 bars.style.transition='900ms'
 bars.style.transform='rotate(-360deg)'
 
-    setLaz(!laz)
+   setLaz(!laz)
    setIsOpen(isOpen => !isOpen)
+
 
   }
 
@@ -62,6 +90,9 @@ bars.style.transform='rotate(-360deg)'
 
     <div>
 
+
+
+
   <FaBars id='bars' className={navStyles.bars} onClick={toogle}/>
 
       <motion.div className={navStyles.orangeBack}
@@ -74,10 +105,29 @@ bars.style.transform='rotate(-360deg)'
 
     <div className={navStyles.main768}>
 
+      <motion.svg className={navStyles.svg} width="321" height="100vh" viewBox="0 0 321 1459" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <motion.path
+        variants={menuVariants}
+         initial="closed"
+        animate={showMenu ? "open" : "closed"}
+         d="M321.334 0C-109.113 615.078 -105.105 934.144 321.334 1459" stroke="#f0ad4e" strokeWidth="5"/>
+       </motion.svg>
+
+
+
+
+
+
+
+
+
+
                   <motion.div className={navStyles.first}
                    animate={{x:[300,0],rotate:[10,0],opacity:[0,1]}}
                    transition={{duration:1.5,delay:.5,ease:'easeOut'}}
                  >
+
+
 
                   <Link to={'/dev'}>Home</Link>
                   <Link to={'/dev/about'}>About</Link>

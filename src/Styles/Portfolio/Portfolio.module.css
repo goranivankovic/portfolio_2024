@@ -9,14 +9,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
+  flex-direction: column;
    z-index: 10;
     padding: 1em;
 
     background-color: var(--black);
     color: var(--white);
 
- 
+
 
 
 
