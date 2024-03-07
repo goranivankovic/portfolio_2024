@@ -31,6 +31,28 @@ const variants = {
 
 
 
+const barVariants = {
+    open: {
+        opacity: 1,
+        transition: {
+            duration: 3,
+            delay:1.5,
+        
+        },
+        pathLength: 1
+      },
+    closed: {
+        opacity: 1,
+           
+        transition: {
+            duration: 3
+        },
+         pathLength: 0
+    }
+}
+
+
+
 
 
 
@@ -54,6 +76,7 @@ const menuVariants = {
 
 function NavBar() {
    const [showMenu, setShowMenu] = useState("closed")
+   const [showBars, setShowBars] = useState("closed")
 
   const[laz,setLaz]=useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -61,20 +84,26 @@ function NavBar() {
 function toogle() {
   if (!laz) {
     let bars =document.getElementById('bars')
+
 bars.style.transition='900ms'
 bars.style.transform='rotate(360deg)'
+bars.style.transformOrigin='center'
+
+
 
     setLaz(!laz)
     setIsOpen(isOpen => !isOpen)
+    setShowBars(!showBars)
 
   }else{
         let bars =document.getElementById('bars')
 bars.style.transition='900ms'
 bars.style.transform='rotate(-360deg)'
+bars.style.transformOrigin='center'
 
    setLaz(!laz)
    setIsOpen(isOpen => !isOpen)
-
+  setShowBars(!showBars)
 
   }
 
@@ -91,9 +120,23 @@ bars.style.transform='rotate(-360deg)'
     <div>
 
 
+            <svg id="bars" className={navStyles.bars} onClick={toogle} width="114" height="59" viewBox="0 0 114 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                      <motion.rect
+                      variants={barVariants}
+                       initial="closed"
+                        animate={showBars ? "open" : "closed"}
+                       id="rec8" x="26" y="8" width="58" height="9" fill="none" stroke="#f0ad4e" strokeWidth="2"/>
+                     <rect id="line2" x="51" y="23" width="58" height="9" fill="none" stroke="#f0ad4e" strokeWidth="2"/>
+                     <motion.rect
+                      variants={barVariants}
+                       initial="closed"
+                        animate={showBars ? "open" : "closed"}
+                      id="rec10" x="26" y="39" width="58" height="9" fill="none" stroke="#f0ad4e" strokeWidth="2"/>
+                   </g>
+             </svg>
 
-
-  <FaBars id='bars' className={navStyles.bars} onClick={toogle}/>
+  {/* <FaBars id='bars' className={navStyles.bars} onClick={toogle}/> */}
 
       <motion.div className={navStyles.orangeBack}
        animate={isOpen ? "open" : "closed"}

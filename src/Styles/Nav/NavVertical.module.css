@@ -52,6 +52,7 @@
     transform-origin: center;
     color: var(--white);
     font-size: var(--navBarVertical);
+    font-size: 5rem;
 
 }
 
