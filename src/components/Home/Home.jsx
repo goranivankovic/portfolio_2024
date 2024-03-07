@@ -84,7 +84,7 @@ function Home() {
 							
 							<div className={homeStyles.buttonLinkDiv}>
 
-								 <a href="/#about" style={{textDecoration:"none"}}>
+								 <a href="#about" style={{textDecoration:"none"}}>
 							<motion.button
 							animate={{borderRadius: ['.7rem','1rem','2rem','.7rem'],scale:[1,1.2,1]}}
 
