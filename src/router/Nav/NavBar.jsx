@@ -172,13 +172,13 @@ bars.style.transformOrigin='center'
 
 
 
-                  <Link to={'/dev'}>Home</Link>
-                  <Link to={'/dev/about'}>About</Link>
-                  <Link to={'/dev/portfolio'}>Portfolio</Link>  
-                  <Link to={'/dev/skills'}>Skills</Link> 
-                  <Link to={'/dev/contact'}>Contact</Link> 
+                  <Link to={'/'}>Home</Link>
+                  <Link to={'/about'}>About</Link>
+                  <Link to={'/portfolio'}>Portfolio</Link>  
+                  <Link to={'/skills'}>Skills</Link> 
+                  <Link to={'/contact'}>Contact</Link> 
 
-                  <Link to={'/'}><SlScreenDesktop    className={navStyles.sun} /> </Link>      
+                  <Link to={'/dev'}><SlScreenDesktop    className={navStyles.sun} /> </Link>      
 
         
 

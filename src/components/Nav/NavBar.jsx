@@ -137,13 +137,13 @@ bars.style.transformOrigin='center'
        transition={{duration:1.5,delay:1,ease:'easeOut'}}
        >
 
-                 <a  className={navStyles.firstItem} href="/#home">Home </a>
-                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#about">  About</a>
-                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#portfolio"> Portfolio</a>
-                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#skills"> Skills / Tech </a>
-                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#contact">Contact</a>
+                 <a  className={navStyles.firstItem} href="#home">Home </a>
+                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#about">  About</a>
+                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#portfolio"> Portfolio</a>
+                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#skills"> Skills / Tech </a>
+                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#contact">Contact</a>
 
-            <Link to={'/dev'}><SlScreenDesktop  style={{color:textColor}}  className={navStyles.sun} /> </Link>      
+            <Link to={'/'}><SlScreenDesktop  style={{color:textColor}}  className={navStyles.sun} /> </Link>      
 
               {laz  ? <HiOutlineSun onClick={()=>dispatch(whiteBgColor())} style={{color:textColor}} 
          
@@ -191,13 +191,13 @@ bars.style.transformOrigin='center'
           transition={{duration:1.5,delay:.5,ease:'easeOut'}}
        >
 
-                 <a onClick={toogle}  className={navStyles.firstItem} href="/#home">Home </a>
-                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#about">  About</a>
-                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#portfolio"> Portfolio</a>
-                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#skills"> Skills / Tech </a>
-                 <a onClick={toogle}  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="/#contact">Contact</a>
+                 <a onClick={toogle}  className={navStyles.firstItem} href="#home">Home </a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#about">  About</a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#portfolio"> Portfolio</a>
+                 <a onClick={toogle}   style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#skills"> Skills / Tech </a>
+                 <a onClick={toogle}  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#contact">Contact</a>
 
-            <Link to={'/dev'}><SlScreenDesktop  style={{color:textColor}}  className={navStyles.sun} /> </Link>      
+            <Link to={'/'}><SlScreenDesktop  style={{color:textColor}}  className={navStyles.sun} /> </Link>      
 
       
         

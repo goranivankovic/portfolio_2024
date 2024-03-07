@@ -29,34 +29,34 @@ const router = createBrowserRouter([
     element: <Not />,
   },
 
-{
-    path: "/",
-    element: <App />,
-  },
-
   {
-    path: "/dev",
+    path: "/",
     element: <HomeRoute />,
   },
 
   {
-    path: "/dev/about",
+    path: "/about",
     element: <About />,
   },
     {
-    path: "/dev/portfolio",
+    path: "/portfolio",
     element: <PortfolioRoute />,
   },
    {
-    path: "/dev/skills",
+    path: "/skills",
     element: <SkillRoute />,
   },
 
   ,
    {
-    path: "/dev/contact",
+    path: "/contact",
     element: <ContactRoute />,
   },
+
+ {
+    path: "/dev",
+    element: <App />,
+  }, 
  
 
 ]);
