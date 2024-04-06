@@ -74,7 +74,9 @@ function Home() {
 								   animate={{y:[300,0],opacity:[0,1]}}
 									 transition={{duration:2,delay:1.5,ease:'anticipate'}}
 									
-									 >Frontend Developer, Designer, Coder, Debugger</motion.div>
+									 >
+				                         Frontend Developer, Designer, Coder, Debugger
+									</motion.div>
 
 						           </div>
 

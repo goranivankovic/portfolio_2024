@@ -8,6 +8,7 @@
 
 
 
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,6 +33,7 @@ display: none;
       justify-content: space-between;
      z-index: 20;
 
+overflow: hidden;
 
 
    
@@ -39,11 +41,17 @@ display: none;
 
  .first a{
   font-size: var(--navItems);
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 
-
-
+  
  }
+
+
+
+
+
 
  .firstItem {
 
@@ -58,10 +66,13 @@ display: none;
 
     transition: var(--transition);
     transform: scale(.98);
-     text-decoration: none;
-     border-bottom: .2em solid var(--orange);
-     padding-bottom: .2em;
- }
+    text-decoration: none;
+    border-bottom: .2em solid var(--orange);
+    padding-bottom: .2em;
+
+
+ } 
+
 
 
  .sun{

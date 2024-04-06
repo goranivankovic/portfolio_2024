@@ -51,6 +51,11 @@ const barVariants = {
 
 
 
+
+
+
+
+
 function NavBar() {
     const [showBars, setShowBars] = useState("closed")
 
@@ -138,7 +143,7 @@ bars.style.transformOrigin='center'
        >
 
                  <a  className={navStyles.firstItem} href="#home">Home </a>
-                 <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#about">  About</a>
+                 <a style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}  href="#about">About </a>
                  <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#portfolio"> Portfolio</a>
                  <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#skills"> Skills / Tech </a>
                  <a  style={{color:textColor}} onMouseOver={orangeColor} onMouseOut={defaultColor}   href="#contact">Contact</a>
