@@ -70,11 +70,6 @@
 
 }
 
-.firstdivText:hover{
-    transition: var(--transition);
-   color: var(--grey);
-   transform: scale(.97);
-}
 
 
 
