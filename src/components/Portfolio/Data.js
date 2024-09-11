@@ -1,6 +1,6 @@
 import b8 from         '../../assets/b8.jpg'
 import shop from       '../../assets/shop.png'
-import movies from     '../../assets/movies.jpeg'
+import dj from     '../../assets/dj.jpg'
 import weather from     '../../assets/weather.jpeg'
 import fit from        '../../assets/fit.jpg'
 import crypto from     '../../assets/crypto.jpg'
@@ -18,7 +18,7 @@ export const projects =
         img:`${crypto}`,
         live:"https://nscoder-crypto.vercel.app/",
         code:"https://github.com/goranivankovic/nscoder-crypto-app"
-    },
+    },  
 
   {
         id:"2",
@@ -30,8 +30,20 @@ export const projects =
         code:"https://github.com/goranivankovic/nscoder-fit"
     },
 
-    {
+  {
         id:"3",
+        name:"Music Website",
+        textHeadline:"BRIEF",
+        text:"Dynamic, completely responsive music app made from scratch using : Vite , React Router, Dotenv, React-icons. For longer description visit github.",
+        img:`${dj}`,
+        live:"https://dj-dexa.vercel.app",
+        code:"https://github.com/goranivankovic/dj-dexa"
+    }, 
+
+
+
+    {
+        id:"4",
         name:"Bicycle Website",
         textHeadline:"BRIEF",
         text:"Fitness Website responsive app made from scratch using : React , React Router, React-icons. For longer description visit github. With advanced cart functionalities, and many other features.",
@@ -41,7 +53,7 @@ export const projects =
     }, 
   
     {
-        id:"4",
+        id:"5",
         name:"E-Commerce Shop",
         textHeadline:"BRIEF",
         text:"Full e-Commerce Web App, completely responsive, made from scratch using: React, React Router, React-bootstrap and React-redux for state management. With advanced cart functionalities, and many other features.",
@@ -52,7 +64,7 @@ export const projects =
 
 
        {
-        id:"5",
+        id:"6",
         name:"Weather App",
         textHeadline:"BRIEF",
         text:"Dynamic app made from scratch using : React, CSS-Modules , Axios, React-flags, that asynchronously collects data from two different APIs 'openweather'. You can also search for any place on earth. For longer description visit github.",
@@ -61,16 +73,7 @@ export const projects =
         code:"https://github.com/goranivankovic/weather-app"
     },  
 
-       {
-        id:"6",
-        name:"Movie Website",
-        textHeadline:"BRIEF",
-        text:"Dynamic, completely responsive app made from scratch using : React , React Router, React-bootstrap, Dotenv, React-icons. For longer description visit github.",
-        img:`${movies}`,
-        live:"https://nscoder-movie.netlify.app/",
-        code:"https://github.com/goranivankovic/react-movie"
-    }, 
-
+     
  
 
 
