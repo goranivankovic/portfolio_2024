@@ -78,7 +78,7 @@ function Home() {
 
 								 <Link to={"/about"} >
 							<motion.button
-							animate={{borderRadius: ['.7rem','1rem','2rem','.7rem'],scale:[1,1.2,1]}}
+							animate={{borderRadius: ['.7rem','1rem','2rem','.7rem'],scale:[1,1.1,1]}}
 
 							transition={{duration:3,delay:1,ease:'anticipate',repeat:Infinity}}
 								   className={homeStyles.button} > Next   <AiOutlineArrowRight className={homeStyles.arrow} /></motion.button>

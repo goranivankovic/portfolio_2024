@@ -88,7 +88,7 @@ function Home() {
 
 								 <a href="#about" style={{textDecoration:"none"}}>
 							<motion.button
-							animate={{borderRadius: ['.7rem','1rem','2rem','.7rem'],scale:[1,1.2,1]}}
+							animate={{borderRadius: ['.7rem','1rem','2rem','.7rem'],scale:[1,1.1,1]}}
 
 							transition={{duration:3,delay:1,ease:'anticipate',repeat:Infinity}}
 								   className={homeStyles.button} style={{color:textColor,borderColor:headlineColor}}> Next   <AiOutlineArrowDown className={homeStyles.arrow} /></motion.button></a>
