@@ -36,7 +36,7 @@ export const projects =
         textHeadline:"BRIEF",
         text:"Dynamic, completely responsive music app made from scratch using : Vite , React Router, Dotenv, React-icons. For longer description visit github.",
         img:`${dj}`,
-        live:"https://dj-dexa.vercel.app",
+        live:"https://dj-dexa123.vercel.app",
         code:"https://github.com/goranivankovic/dj-dexa"
     }, 
 
